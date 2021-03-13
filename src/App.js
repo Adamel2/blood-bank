@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/Navbar/Navbar";
+import FormInput from "./components/Form/FormInput";
+import ViewBlood from "./components/ViewBlood/ViewBlood";
+import Events from "./components/Event/Events";
+import { BrowserRouter as  Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+
+        <NavBar />
+
+      </div>
+      <BrowserRouter>
+      
+      <Switch>
+          <Route exact path="/blood-bank" component={FormInput} />
+          <Route exact path="/blood-bank/ViewBlood" component={ViewBlood} />
+          <Route exact path="/blood-bank/events" component={Events} />
+          <Redirect from="/" to="/blood-bank" />
+        </Switch>
+      
+      
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }
