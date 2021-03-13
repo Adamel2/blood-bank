@@ -3,7 +3,7 @@ import NavBar from "./components/Navbar/Navbar";
 import FormInput from "./components/Form/FormInput";
 import ViewBlood from "./components/ViewBlood/ViewBlood";
 import Events from "./components/Event/Events";
-import { BrowserRouter as  Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
+import { HashRouter as  Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <NavBar />
 
       </div>
-      <BrowserRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       
       <Switch>
           <Route exact path="/blood-bank" component={FormInput} />
@@ -24,7 +24,7 @@ function App() {
         </Switch>
       
       
-      </BrowserRouter>
+     </HashRouter>
       <Footer />
     </div>
   );
