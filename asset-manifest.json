@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/blood-bank/static/css/main.f7df2861.chunk.css",
+    "main.js": "/blood-bank/static/js/main.2319f36e.chunk.js",
+    "main.js.map": "/blood-bank/static/js/main.2319f36e.chunk.js.map",
+    "runtime-main.js": "/blood-bank/static/js/runtime-main.7b6135bb.js",
+    "runtime-main.js.map": "/blood-bank/static/js/runtime-main.7b6135bb.js.map",
+    "static/js/2.ccc24d08.chunk.js": "/blood-bank/static/js/2.ccc24d08.chunk.js",
+    "static/js/2.ccc24d08.chunk.js.map": "/blood-bank/static/js/2.ccc24d08.chunk.js.map",
+    "static/js/3.f086d94c.chunk.js": "/blood-bank/static/js/3.f086d94c.chunk.js",
+    "static/js/3.f086d94c.chunk.js.map": "/blood-bank/static/js/3.f086d94c.chunk.js.map",
+    "index.html": "/blood-bank/index.html",
+    "static/css/main.f7df2861.chunk.css.map": "/blood-bank/static/css/main.f7df2861.chunk.css.map",
+    "static/js/2.ccc24d08.chunk.js.LICENSE.txt": "/blood-bank/static/js/2.ccc24d08.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b6135bb.js",
+    "static/js/2.ccc24d08.chunk.js",
+    "static/css/main.f7df2861.chunk.css",
+    "static/js/main.2319f36e.chunk.js"
+  ]
+}
