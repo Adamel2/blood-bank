@@ -14,12 +14,12 @@ function App() {
         <NavBar />
 
       </div>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
       
       <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/blood-bank'} component={FormInput} />
-          <Route exact path={process.env.PUBLIC_URL + '/blood-bank/ViewBlood'} component={ViewBlood} />
-          <Route exact path={process.env.PUBLIC_URL + '/blood-bank/events'} component={Events} />
+          <Route exact path='/blood-bank' component={FormInput} />
+          <Route exact path='/blood-bank/ViewBlood' component={ViewBlood} />
+          <Route exact path='/blood-bank/events' component={Events} />
           <Redirect from="/" to="/blood-bank" />
         </Switch>
       
